@@ -1,0 +1,56 @@
+/* forms.css */
+/* The techniques here are largely based on the following blog post */
+/* http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html */
+/* with a few adjustments to make it work on forms of variable width, */
+/* sectioning through the use of headings, and a lot of other stuff */
+/* I can't really remember right now. */
+
+form.two-columns         { padding : 10px }
+form.two-columns .gist   { margin-bottom: 5px; font-size: 0.9em }
+
+form.two-columns label   { 
+  float: left;
+  clear: left;
+  width: 120px;
+  text-align: right
+}
+form.two-columns label.no-explain { line-height: 2.3em }
+
+form.two-columns span.explain,
+form.two-columns span.error  {
+  display: block;
+  text-align: right;
+  font-size: 85%;
+  font-weight: normal;
+  margin-bottom: 5px
+}
+form.two-columns span.explain { color: #4D4D4D }
+form.two-columns span.error   { color: red }
+
+form.two-columns input,
+form.two-columns select,
+form.two-columns textarea,
+form.two-columns .static {
+  float: left;
+  margin: 2px 0 10px 10px
+}
+
+form.two-columns button {
+  display: block;
+  margin-left: 130px;
+  text-align: center;
+  clear: both
+}
+
+/* Headings */
+form.two-columns h1,
+form.two-columns h2,
+form.two-columns h3  { clear: both; margin: 5px 0 }
+
+/* Styling recommendations */
+label         { font-weight: bold }
+input, 
+select,
+button, 
+textarea      { border: 1px solid; padding: 3px; font-size: 1em }
+button        { background-color: #eee; color: #222; border: 1px outset #ccc; padding: 3px; font-weight: bold }

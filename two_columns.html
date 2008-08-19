@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Two Columns Form Demo</title>
+    <style type="text/css" media="screen">
+      *           { margin: 0; padding: 0 }
+      body        { font-size: 76%; font-family: Optima, "Trebuchet MS", sans-serif; background-color: #2d2d2d }
+      #container  { width: 600px; margin: 50px auto 0; padding: 20px; font-size: 1.2em; background-color: #fff }
+    </style>
+    <link rel="stylesheet" href="two_columns.css" type="text/css" media="screen" charset="utf-8" />
+  </head>
+  <body>
+    <div id="container">
+      <h3>Two columns forms</h3>
+      <p>
+        This is my very favorite setup for two columns forms. It's largely based on
+        <a href="http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html">
+          a blog post by Antonio Lupetti
+        </a>. I modified it so the form doesn't need a fixed width, plus quite a few other small
+        bits I can't remember. Open up Firebug and try to spot the differences if you care enough.
+      </p>
+      <form action="#" method="get" accept-charset="utf-8" class="two-columns">
+        <h3>You can throw in a few headings</h3>
+        <p class="gist">... for the sake of making things more informative</p>
+        <label for="a_field">
+          A field
+          <span class="explain">Add some explaining here</span>
+        </label>
+        <input type="text" name="a_field" value="" style="width: 16em" />
+        <label for="another_field">
+          And another field
+          <span class="explain">With some more explaining</span>
+        </label>
+        <input type="text" name="another_field" value="" style="width: 16em" />
+        <h3>Separate section</h3>
+        <label for="separate_field">
+          Separate field
+          <span class="explain">Lorem Ipsum</span>
+        </label>
+        <input type="text" name="separate_field" value="" style="width: 16em" />
+        <label for="cant_explain" class="no-explain">
+          No explaining
+        </label>
+        <input type="text" name="cant_explain" value="" style="width: 16em" />        
+        <label for="with_error">
+          Error on field
+          <span class="error">Invalid something</span>
+        </label>
+        <input type="text" name="cant_explain" value="" style="width: 16em" />        
+        <button type="submit">Post form!</button>
+      </form>
+    </div>
+  </body>
+</html>
