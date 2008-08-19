@@ -1,0 +1,2 @@
+This is my very favorite setup for two columns forms. It's largely based on a blog post by Antonio Lupetti (http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html). I modified it so the form doesn't need a fixed width, plus quite a few other small bits I can't remember. Open up Firebug and try to spot the differences if you care enough.
+
